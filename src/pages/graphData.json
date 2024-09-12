@@ -1,27 +1,32 @@
 [
   {
+    "id": "home",
+    "title": "home",
+    "description": "Il cambiamento climatico è una delle sfide più urgenti del nostro tempo. Attraverso dati scientifici, grafici interattivi e approfondimenti, esploriamo come le attività umane stiano alterando il clima del nostro pianeta. Scopri l'impatto delle emissioni di gas serra, il riscaldamento globale e le conseguenze ambientali, come lo scioglimento dei ghiacci artici e il rilascio di metano dal permafrost. Unisciti a noi per comprendere meglio la crisi climatica e come possiamo agire per un futuro sostenibile."
+  },
+  {
     "id": "co2",
-    "title": "Grafico CO2",
+    "title": "CO2",
     "description": "Per migliaia di anni, la concentrazione naturale di CO2 nell'atmosfera terrestre è stata intorno a 280 ppm. Dall'inizio della rivoluzione industriale, le attività umane come la combustione di combustibili fossili, la deforestazione e l'allevamento hanno aumentato questa quantità di oltre il 30%."
   },
   {
     "id": "ice",
-    "title": "Grafico del Ghiaccio",
+    "title": "Ghiaccio Polare",
     "description": "L'Artico si sta riscaldando circa il doppio rispetto alla media globale. Alcune delle cause di questo fenomeno sono: l'amplificazione artica, l'effetto albedo e il black carbon. Dal 1979 al 1996, abbiamo perso tra il 2,2% e il 3% della copertura di ghiaccio artico. Dal 2010 a oggi stiamo perdendo il 12,85% per decennio! Un'altra conseguenza è lo scongelamento del permafrost, un processo che rilascia grandi quantità di metano nell'atmosfera, accelerando ulteriormente il riscaldamento globale."
   },
   {
     "id": "no2",
-    "title": "Grafico NO2",
+    "title": "NO2",
     "description": "Il protossido di azoto è un gas prodotto dalla combustione di combustibili fossili e rifiuti solidi, fertilizzanti a base di azoto, impianti di trattamento delle acque reflue, processi naturali e altre attività agricole e industriali. È il terzo gas serra più abbondante nell'atmosfera e il principale composto distruttore dell'ozono emesso dalle attività umane."
   },
   {
     "id": "temperature",
-    "title": "Grafico delle Temperature",
+    "title": "Temperatura Globale",
     "description": "Il tasso attuale di riscaldamento globale non è naturale. Dal 1880 al 1981, il tasso era di 0,07°C (0,13°F) per decennio. Dal 1981, questo tasso è aumentato a 0,18°C (0,32°F) per decennio. Alcuni degli aumenti improvvisi di temperatura globale nel passato, come nel Periodo Caldo Romano e il Periodo Caldo Medievale, sono stati eventi regionali, non globali. L'aumento totale medio della temperatura globale dalla rivoluzione industriale è di circa 1,0°C (1,8°F). L'emisfero settentrionale della Terra si sta riscaldando più velocemente, e l'Artico ha visto un riscaldamento tra 2°C (3,6°F) e 4°C (7,2°F). La temperatura terrestre è strettamente correlata alla proporzione di gas come CO2, metano e ossido di diazoto nell'atmosfera."
   },
   {
     "id": "methane",
-    "title": "Grafico del Metano",
+    "title": "Metano",
     "description": "Il metano è un gas infiammabile formato da processi geologici e biologici. Alcune delle fonti naturali sono le perdite dai sistemi di gas naturale e le zone umide. Il 50-65% delle emissioni globali totali di metano proviene da attività umane, tra cui l'allevamento, l'agricoltura, i sistemi di petrolio e gas, i rifiuti domestici e aziendali, le discariche, e così via. Il metano ha un potenziale di riscaldamento globale diverse volte superiore a quello della CO2. Per oltre 650.000 anni, la concentrazione di metano nell'atmosfera è stata tra 350 e 800 ppb. Dall'inizio della rivoluzione industriale, le attività umane hanno aumentato questa quantità di circa il 150%."
   }
 ]

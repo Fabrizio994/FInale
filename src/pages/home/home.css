@@ -1,13 +1,40 @@
-.logoCont h1 a {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  font-weight: 900;
-}
-
-.container {
+.homePage {
+  background-image: url("../../assets/img/nasa-vhSz50AaFAs-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.homeCont {
+  position: relative;
+  display: flex;
+  margin-top: 10%;
   justify-content: center;
   align-items: center;
+}
+
+.homeCont::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.homeCont p {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.homeP {
+  color: rgb(145, 14, 123);
+  font-weight: 900;
+  text-align: center;
 }

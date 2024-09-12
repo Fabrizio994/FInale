@@ -1,11 +1,12 @@
 import { useCo2Data } from "./co2API.jsx";
 import ChartArea from "../../components/AreaChart.jsx";
 import GraphWrapper from "../../components/GraphWrapper.jsx";
+import Spinner from "../../components/spinner.jsx";
 
 export default function GraphCo290() {
   const { isLoading, error, data } = useCo2Data();
   const last = data && data.length > 0 ? data[data.length - 1] : null;
-  if (isLoading) return "Loading...";
+  if (isLoading) return <Spinner />;
 
   if (error) return "An error has occurred: " + error.message;
 

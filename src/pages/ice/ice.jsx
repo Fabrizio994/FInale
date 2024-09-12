@@ -1,6 +1,6 @@
 import { QueryClient, QueryClientProvider } from "react-query";
 import GraphIce from "./graphIce.jsx";
-import Navbar from "../../components/navBar";
+import Navbar from "../../components/Navbarfold/navBar.jsx";
 const queryClient = new QueryClient();
 
 export default function Ice() {

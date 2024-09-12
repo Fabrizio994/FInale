@@ -18,17 +18,21 @@ export default function AreaCharts({ data, dataX, dataY, domain }) {
     const handleResize = () => {
       const newWidth = window.innerWidth;
       let widthAdjustment = 100;
-      let newHeight = 350;
+      let newHeight = 450;
 
-      if (newWidth < 450) {
-        widthAdjustment = 20;
+      if (newWidth < 500) {
+        widthAdjustment = 40;
         newHeight = 200;
       } else if (newWidth < 750) {
         widthAdjustment = 75;
         newHeight = 300;
+      } else if (newWidth < 900) {
+        widthAdjustment = 75;
+        newHeight = 400;
       }
       setDimensions({
-        width: newWidth > 1000 ? 1000 : newWidth - widthAdjustment,
+        width:
+          newWidth > 1200 ? 1200 - widthAdjustment : newWidth - widthAdjustment,
         height: newHeight,
       });
     };

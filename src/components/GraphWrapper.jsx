@@ -4,7 +4,7 @@ import graphData from "../pages/graphData.json";
 const GraphWrapper = ({ graphId, children, last }) => {
   const [showGraph, setShowGraph] = useState(false);
   const graphInfo = graphData.find((graph) => graph.id === graphId);
-  null;
+
   return (
     <>
       <div className="all">

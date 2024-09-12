@@ -20,10 +20,10 @@ export default function ChartLine({ data, dataY, dataX, domain }) {
     const handleResize = () => {
       const newWidth = window.innerWidth;
       let widthAdjustment = 100;
-      let newHeight = 500;
+      let newHeight = 450;
 
-      if (newWidth < 450) {
-        widthAdjustment = 20;
+      if (newWidth < 500) {
+        widthAdjustment = 40;
         newHeight = 200;
       } else if (newWidth < 750) {
         widthAdjustment = 75;
@@ -33,7 +33,8 @@ export default function ChartLine({ data, dataY, dataX, domain }) {
         newHeight = 400;
       }
       setDimensions({
-        width: newWidth > 1200 ? 1200 : newWidth - widthAdjustment,
+        width:
+          newWidth > 1200 ? 1200 - widthAdjustment : newWidth - widthAdjustment,
         height: newHeight,
       });
     };

@@ -1,6 +1,17 @@
-import Navbar from "../../components/navBar.jsx";
+import Navbar from "../../components/Navbarfold/navBar.jsx";
+import graphData from "../graphData.json";
 import "./home.css";
 function Home() {
-  return <Navbar />;
+  const homeData = graphData.find((graph) => graph.id === "home");
+  return (
+    <>
+      <Navbar />
+      <div className="homePage">
+        <div className="homeCont">
+          <p className="fs-4 homeP">{homeData.description}</p>
+        </div>
+      </div>
+    </>
+  );
 }
 export default Home;
