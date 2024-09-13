@@ -8,7 +8,7 @@ function Home() {
       <Navbar />
       <div className="homePage">
         <div className="homeCont">
-          <p className="fs-4 homeP">{homeData.description}</p>
+          <p className=" homeP">{homeData.description}</p>
         </div>
       </div>
     </>

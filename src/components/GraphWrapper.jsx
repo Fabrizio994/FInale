@@ -23,7 +23,7 @@ const GraphWrapper = ({ graphId, children, last }) => {
         <h2 className="mb-5 mt-3">
           Ultimo dato: <span className="text-danger">{last}</span>
         </h2>
-        <p className="text-center fs-4 ms-5 me-5 ">{graphInfo.description}</p>
+        <p className="text-center ms-5 me-5 ">{graphInfo.description}</p>
       </div>
     </>
   );
