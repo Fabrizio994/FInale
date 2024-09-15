@@ -1,5 +1,5 @@
 import { useCo2Data } from "./co2API.jsx";
-import ChartArea from "../../components/AreaChart.jsx";
+import Chart from "../../components/Chart.jsx";
 import GraphWrapper from "../../components/GraphWrapper.jsx";
 import Spinner from "../../components/spinner.jsx";
 
@@ -13,7 +13,8 @@ export default function GraphCo290() {
   return (
     <>
       <GraphWrapper graphId="co2" last={last.cycle}>
-        <ChartArea
+        <Chart
+          type="area"
           data={data}
           dataY="trend"
           dataX="yearMonth"

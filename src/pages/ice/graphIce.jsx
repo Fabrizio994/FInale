@@ -1,5 +1,5 @@
 import { useIceData } from "./iceAPI";
-import ChartLine from "../../components/LineChart.jsx";
+import Chart from "../../components/Chart.jsx";
 import GraphWrapper from "../../components/GraphWrapper.jsx";
 import Spinner from "../../components/spinner.jsx";
 export default function GraphIce() {
@@ -12,7 +12,8 @@ export default function GraphIce() {
   return (
     <>
       <GraphWrapper graphId="ice" last={last.value}>
-        <ChartLine
+        <Chart
+          type="line"
           data={data}
           dataY="value"
           dataX="yearMonth"

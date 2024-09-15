@@ -1,14 +1,14 @@
 import No2Graph from "./no2Graph.jsx";
-import { QueryClient, QueryClientProvider } from "react-query";
+("react-query");
 import Navbar from "../../components/Navbarfold/navBar.jsx";
 import Footer from "../../components/FooterFold/footer.jsx";
-export default function Methane() {
+import Helmet from "../../components/Helmet.jsx";
+export default function No2() {
   return (
     <>
+      <Helmet description="No2 graph">No2</Helmet>
       <Navbar />
-      <QueryClientProvider client={new QueryClient()}>
-        <No2Graph />
-      </QueryClientProvider>
+      <No2Graph />
       <Footer />
     </>
   );

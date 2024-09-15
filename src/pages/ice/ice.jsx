@@ -1,16 +1,14 @@
-import { QueryClient, QueryClientProvider } from "react-query";
 import GraphIce from "./graphIce.jsx";
 import Navbar from "../../components/Navbarfold/navBar.jsx";
 import Footer from "../../components/FooterFold/footer.jsx";
-const queryClient = new QueryClient();
+import Helmet from "../../components/Helmet.jsx";
 
 export default function Ice() {
   return (
     <>
+      <Helmet description="Ice graph">GhiaccioPoalre</Helmet>
       <Navbar />
-      <QueryClientProvider client={queryClient}>
-        <GraphIce />
-      </QueryClientProvider>
+      <GraphIce />
       <Footer />
     </>
   );

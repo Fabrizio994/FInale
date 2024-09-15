@@ -1,5 +1,5 @@
 import { useNo2Data } from "./no2APi.jsx";
-import ChartArea from "../../components/AreaChart.jsx";
+import Chart from "../../components/Chart.jsx";
 import GraphWrapper from "../../components/GraphWrapper.jsx";
 import Spinner from "../../components/spinner.jsx";
 export default function GraphNo2() {
@@ -12,7 +12,8 @@ export default function GraphNo2() {
   return (
     <>
       <GraphWrapper graphId="no2" last={last.average}>
-        <ChartArea
+        <Chart
+          type="area"
           data={data}
           dataY="average"
           dataX="date"

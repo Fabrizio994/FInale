@@ -1,14 +1,18 @@
+import { useState, useEffect } from "react";
 import {
+  LineChart,
   AreaChart,
+  Line,
   Area,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
+  Legend,
   ResponsiveContainer,
 } from "recharts";
-import { useState, useEffect } from "react";
-export default function AreaCharts({ data, dataX, dataY, domain }) {
+
+const GenericChart = ({ type, data, dataY, dataX, domain }) => {
   const [dimensions, setDimensions] = useState({
     width: window.innerWidth - 100,
     height: 400,
@@ -46,16 +50,48 @@ export default function AreaCharts({ data, dataX, dataY, domain }) {
     };
   }, []);
 
-  return (
-    <>
-      <div className="chart-container">
-        <ResponsiveContainer
-          width={dimensions.width}
-          height={dimensions.height}
-        >
+  const renderChart = () => {
+    switch (type) {
+      case "line":
+        return (
+          <LineChart
+            data={data}
+            margin={{
+              top: 10,
+              right: 10,
+              left: 0,
+              bottom: 0,
+            }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis
+              dataKey={dataX}
+              angle={-45}
+              textAnchor="end"
+              height={50}
+              interval="preserveStartEnd"
+            />
+            <YAxis
+              angle={5}
+              textAnchor="end"
+              domain={domain}
+              allowDataOverflow={false}
+            />
+            <Tooltip />
+            <Legend />
+            <Line
+              type="monotone"
+              dataKey={dataY}
+              stroke="#8884d8"
+              strokeWidth={2}
+              activeDot={{ r: 5 }}
+              dot={{ r: 2 }}
+            />
+          </LineChart>
+        );
+      case "area":
+        return (
           <AreaChart
-            width={dimensions.width}
-            height={dimensions.height}
             data={data}
             margin={{
               top: 10,
@@ -75,8 +111,19 @@ export default function AreaCharts({ data, dataX, dataY, domain }) {
               fill="#8884d8"
             />
           </AreaChart>
-        </ResponsiveContainer>
-      </div>
-    </>
+        );
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <div className="chart-container">
+      <ResponsiveContainer width={dimensions.width} height={dimensions.height}>
+        {renderChart()}
+      </ResponsiveContainer>
+    </div>
   );
-}
+};
+
+export default GenericChart;

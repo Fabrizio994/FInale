@@ -1,14 +1,15 @@
 import TemperatureGraph from "./tempgraph.jsx";
-import { QueryClient, QueryClientProvider } from "react-query";
+("react-query");
 import Navbar from "../../components/Navbarfold/navBar.jsx";
 import Footer from "../../components/FooterFold/footer.jsx";
+
+import Helmet from "../../components/Helmet.jsx";
 export default function Temperature() {
   return (
     <>
+      <Helmet description="Temperature graph">Temperature</Helmet>
       <Navbar />
-      <QueryClientProvider client={new QueryClient()}>
-        <TemperatureGraph />
-      </QueryClientProvider>
+      <TemperatureGraph />
       <Footer />
     </>
   );

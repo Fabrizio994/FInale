@@ -1,7 +1,7 @@
 import { useMethaneData } from "./methaneApi.jsx";
-import ChartLine from "../../components/LineChart.jsx";
 import GraphWrapper from "../../components/GraphWrapper.jsx";
 import Spinner from "../../components/spinner.jsx";
+import Chart from "../../components/Chart.jsx";
 export default function GraphMethane() {
   const { isLoading, error, data } = useMethaneData();
   const last = data && data.length > 0 ? data[data.length - 1] : null;
@@ -12,7 +12,8 @@ export default function GraphMethane() {
   return (
     <>
       <GraphWrapper graphId="methane" last={last.average}>
-        <ChartLine
+        <Chart
+          type="line"
           data={data}
           dataY="average"
           dataX="date"
