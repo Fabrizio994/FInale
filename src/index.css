@@ -38,9 +38,7 @@ h2 {
 }
 
 p {
-  max-width: 80%;
   max-width: 1200px;
-  margin: 10px;
   font-size: 24px;
   font-weight: 700;
 }
